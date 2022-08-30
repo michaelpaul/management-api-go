@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**ActionDetails** | Pointer to [**OneOfInstallAndroidAppDetailsInstallAndroidCertificateDetailsReleaseUpdateDetailsUninstallAndroidAppDetailsUninstallAndroidCertificateDetails**](oneOf&lt;InstallAndroidAppDetails,InstallAndroidCertificateDetails,ReleaseUpdateDetails,UninstallAndroidAppDetails,UninstallAndroidCertificateDetails&gt;.md) | Information about the action to take. | [optional] 
+**ActionDetails** | Pointer to [**ScheduleTerminalActionsRequestActionDetails**](ScheduleTerminalActionsRequestActionDetails.md) |  | [optional] 
 **Items** | Pointer to [**[]TerminalActionScheduleDetail**](TerminalActionScheduleDetail.md) |  | [optional] 
 **ScheduledAt** | Pointer to **string** | The date and time when the action should happen.  Format: [RFC 3339](https://www.rfc-editor.org/rfc/rfc3339), but without the **Z** before the time offset. For example, **2021-11-15T12:16:21+01:00**  The action is sent with the first [maintenance call](https://docs.adyen.com/point-of-sale/automating-terminal-management/terminal-actions-api#when-actions-take-effect) after the specified date and time in the time zone of the terminal.  An empty value causes the action to be sent as soon as possible: at the next maintenance call. | [optional] 
 **StoreId** | Pointer to **string** | The unique ID of the [store](https://docs.adyen.com/api-explorer/#/ManagementService/latest/get/stores). If present, all terminals in the &#x60;terminalIds&#x60; list must be assigned to this store. | [optional] 
@@ -34,20 +34,20 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetActionDetails
 
-`func (o *ScheduleTerminalActionsResponse) GetActionDetails() OneOfInstallAndroidAppDetailsInstallAndroidCertificateDetailsReleaseUpdateDetailsUninstallAndroidAppDetailsUninstallAndroidCertificateDetails`
+`func (o *ScheduleTerminalActionsResponse) GetActionDetails() ScheduleTerminalActionsRequestActionDetails`
 
 GetActionDetails returns the ActionDetails field if non-nil, zero value otherwise.
 
 ### GetActionDetailsOk
 
-`func (o *ScheduleTerminalActionsResponse) GetActionDetailsOk() (*OneOfInstallAndroidAppDetailsInstallAndroidCertificateDetailsReleaseUpdateDetailsUninstallAndroidAppDetailsUninstallAndroidCertificateDetails, bool)`
+`func (o *ScheduleTerminalActionsResponse) GetActionDetailsOk() (*ScheduleTerminalActionsRequestActionDetails, bool)`
 
 GetActionDetailsOk returns a tuple with the ActionDetails field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetActionDetails
 
-`func (o *ScheduleTerminalActionsResponse) SetActionDetails(v OneOfInstallAndroidAppDetailsInstallAndroidCertificateDetailsReleaseUpdateDetailsUninstallAndroidAppDetailsUninstallAndroidCertificateDetails)`
+`func (o *ScheduleTerminalActionsResponse) SetActionDetails(v ScheduleTerminalActionsRequestActionDetails)`
 
 SetActionDetails sets ActionDetails field to given value.
 
@@ -57,16 +57,6 @@ SetActionDetails sets ActionDetails field to given value.
 
 HasActionDetails returns a boolean if a field has been set.
 
-### SetActionDetailsNil
-
-`func (o *ScheduleTerminalActionsResponse) SetActionDetailsNil(b bool)`
-
- SetActionDetailsNil sets the value for ActionDetails to be an explicit nil
-
-### UnsetActionDetails
-`func (o *ScheduleTerminalActionsResponse) UnsetActionDetails()`
-
-UnsetActionDetails ensures that no value is present for ActionDetails, not even an explicit nil
 ### GetItems
 
 `func (o *ScheduleTerminalActionsResponse) GetItems() []TerminalActionScheduleDetail`

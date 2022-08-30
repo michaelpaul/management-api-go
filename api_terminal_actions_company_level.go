@@ -20,10 +20,6 @@ import (
 	"strings"
 )
 
-// Linger please
-var (
-	_ context.Context
-)
 
 // TerminalActionsCompanyLevelApiService TerminalActionsCompanyLevelApi service
 type TerminalActionsCompanyLevelApiService service
@@ -41,6 +37,7 @@ func (r ApiGetCompaniesCompanyIdAndroidAppsRequest) PageNumber(pageNumber int32)
 	r.pageNumber = &pageNumber
 	return r
 }
+
 // The number of items to have on a page, maximum 100. The default is 20 items on a page.
 func (r ApiGetCompaniesCompanyIdAndroidAppsRequest) PageSize(pageSize int32) ApiGetCompaniesCompanyIdAndroidAppsRequest {
 	r.pageSize = &pageSize
@@ -231,6 +228,7 @@ func (r ApiGetCompaniesCompanyIdAndroidCertificatesRequest) PageNumber(pageNumbe
 	r.pageNumber = &pageNumber
 	return r
 }
+
 // The number of items to have on a page, maximum 100. The default is 20 items on a page.
 func (r ApiGetCompaniesCompanyIdAndroidCertificatesRequest) PageSize(pageSize int32) ApiGetCompaniesCompanyIdAndroidCertificatesRequest {
 	r.pageSize = &pageSize
@@ -423,16 +421,19 @@ func (r ApiGetCompaniesCompanyIdTerminalActionsRequest) PageNumber(pageNumber in
 	r.pageNumber = &pageNumber
 	return r
 }
+
 // The number of items to have on a page, maximum 100. The default is 20 items on a page.
 func (r ApiGetCompaniesCompanyIdTerminalActionsRequest) PageSize(pageSize int32) ApiGetCompaniesCompanyIdTerminalActionsRequest {
 	r.pageSize = &pageSize
 	return r
 }
+
 // Returns terminal actions with the specified status.  Allowed values: **pending**, **successful**, **failed**, **cancelled**, **tryLater**.
 func (r ApiGetCompaniesCompanyIdTerminalActionsRequest) Status(status string) ApiGetCompaniesCompanyIdTerminalActionsRequest {
 	r.status = &status
 	return r
 }
+
 // Returns terminal actions of the specified type.  Allowed values: **InstallAndroidApp**, **UninstallAndroidApp**, **InstallAndroidCertificate**, **UninstallAndroidCertificate**.
 func (r ApiGetCompaniesCompanyIdTerminalActionsRequest) Type_(type_ string) ApiGetCompaniesCompanyIdTerminalActionsRequest {
 	r.type_ = &type_
@@ -620,7 +621,6 @@ type ApiGetCompaniesCompanyIdTerminalActionsActionIdRequest struct {
 	companyId string
 	actionId string
 }
-
 
 func (r ApiGetCompaniesCompanyIdTerminalActionsActionIdRequest) Execute() (*ExternalTerminalAction, *http.Response, error) {
 	return r.ApiService.GetCompaniesCompanyIdTerminalActionsActionIdExecute(r)

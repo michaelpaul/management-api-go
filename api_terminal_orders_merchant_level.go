@@ -20,10 +20,6 @@ import (
 	"strings"
 )
 
-// Linger please
-var (
-	_ context.Context
-)
 
 // TerminalOrdersMerchantLevelApiService TerminalOrdersMerchantLevelApi service
 type TerminalOrdersMerchantLevelApiService service
@@ -223,11 +219,13 @@ func (r ApiGetMerchantsMerchantIdShippingLocationsRequest) Name(name string) Api
 	r.name = &name
 	return r
 }
+
 // The number of locations to skip.
 func (r ApiGetMerchantsMerchantIdShippingLocationsRequest) Offset(offset int32) ApiGetMerchantsMerchantIdShippingLocationsRequest {
 	r.offset = &offset
 	return r
 }
+
 // The number of locations to return.
 func (r ApiGetMerchantsMerchantIdShippingLocationsRequest) Limit(limit int32) ApiGetMerchantsMerchantIdShippingLocationsRequest {
 	r.limit = &limit
@@ -414,7 +412,6 @@ type ApiGetMerchantsMerchantIdTerminalModelsRequest struct {
 	merchantId string
 }
 
-
 func (r ApiGetMerchantsMerchantIdTerminalModelsRequest) Execute() (*TerminalModelsResponse, *http.Response, error) {
 	return r.ApiService.GetMerchantsMerchantIdTerminalModelsExecute(r)
 }
@@ -594,16 +591,19 @@ func (r ApiGetMerchantsMerchantIdTerminalOrdersRequest) CustomerOrderReference(c
 	r.customerOrderReference = &customerOrderReference
 	return r
 }
+
 // The order status. Possible values (not case-sensitive): Placed, Confirmed, Cancelled, Shipped, Delivered.
 func (r ApiGetMerchantsMerchantIdTerminalOrdersRequest) Status(status string) ApiGetMerchantsMerchantIdTerminalOrdersRequest {
 	r.status = &status
 	return r
 }
+
 // The number of orders to skip.
 func (r ApiGetMerchantsMerchantIdTerminalOrdersRequest) Offset(offset int32) ApiGetMerchantsMerchantIdTerminalOrdersRequest {
 	r.offset = &offset
 	return r
 }
+
 // The number of orders to return.
 func (r ApiGetMerchantsMerchantIdTerminalOrdersRequest) Limit(limit int32) ApiGetMerchantsMerchantIdTerminalOrdersRequest {
 	r.limit = &limit
@@ -793,7 +793,6 @@ type ApiGetMerchantsMerchantIdTerminalOrdersOrderIdRequest struct {
 	orderId string
 }
 
-
 func (r ApiGetMerchantsMerchantIdTerminalOrdersOrderIdRequest) Execute() (*TerminalOrder, *http.Response, error) {
 	return r.ApiService.GetMerchantsMerchantIdTerminalOrdersOrderIdExecute(r)
 }
@@ -976,16 +975,19 @@ func (r ApiGetMerchantsMerchantIdTerminalProductsRequest) Country(country string
 	r.country = &country
 	return r
 }
+
 // The terminal model to return products for. Use the ID returned in the [GET &#x60;/terminalModels&#x60;](https://docs.adyen.com/api-explorer/#/ManagementService/latest/get/terminalModels) response. For example, **Verifone.M400**
 func (r ApiGetMerchantsMerchantIdTerminalProductsRequest) TerminalModelId(terminalModelId string) ApiGetMerchantsMerchantIdTerminalProductsRequest {
 	r.terminalModelId = &terminalModelId
 	return r
 }
+
 // The number of products to skip.
 func (r ApiGetMerchantsMerchantIdTerminalProductsRequest) Offset(offset int32) ApiGetMerchantsMerchantIdTerminalProductsRequest {
 	r.offset = &offset
 	return r
 }
+
 // The number of products to return.
 func (r ApiGetMerchantsMerchantIdTerminalProductsRequest) Limit(limit int32) ApiGetMerchantsMerchantIdTerminalProductsRequest {
 	r.limit = &limit
@@ -1715,7 +1717,6 @@ type ApiPostMerchantsMerchantIdTerminalOrdersOrderIdCancelRequest struct {
 	merchantId string
 	orderId string
 }
-
 
 func (r ApiPostMerchantsMerchantIdTerminalOrdersOrderIdCancelRequest) Execute() (*TerminalOrder, *http.Response, error) {
 	return r.ApiService.PostMerchantsMerchantIdTerminalOrdersOrderIdCancelExecute(r)

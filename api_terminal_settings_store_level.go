@@ -20,10 +20,6 @@ import (
 	"strings"
 )
 
-// Linger please
-var (
-	_ context.Context
-)
 
 // TerminalSettingsStoreLevelApiService TerminalSettingsStoreLevelApi service
 type TerminalSettingsStoreLevelApiService service
@@ -221,7 +217,6 @@ type ApiGetMerchantsMerchantIdStoresReferenceTerminalSettingsRequest struct {
 	merchantId string
 	reference string
 }
-
 
 func (r ApiGetMerchantsMerchantIdStoresReferenceTerminalSettingsRequest) Execute() (*TerminalSettings, *http.Response, error) {
 	return r.ApiService.GetMerchantsMerchantIdStoresReferenceTerminalSettingsExecute(r)
@@ -579,7 +574,6 @@ type ApiGetStoresStoreIdTerminalSettingsRequest struct {
 	storeId string
 }
 
-
 func (r ApiGetStoresStoreIdTerminalSettingsRequest) Execute() (*TerminalSettings, *http.Response, error) {
 	return r.ApiService.GetStoresStoreIdTerminalSettingsExecute(r)
 }
@@ -758,6 +752,7 @@ func (r ApiPatchMerchantsMerchantIdStoresReferenceTerminalLogosRequest) Model(mo
 	r.model = &model
 	return r
 }
+
 func (r ApiPatchMerchantsMerchantIdStoresReferenceTerminalLogosRequest) Logo(logo Logo) ApiPatchMerchantsMerchantIdStoresReferenceTerminalLogosRequest {
 	r.logo = &logo
 	return r
@@ -1136,6 +1131,7 @@ func (r ApiPatchStoresStoreIdTerminalLogosRequest) Model(model string) ApiPatchS
 	r.model = &model
 	return r
 }
+
 func (r ApiPatchStoresStoreIdTerminalLogosRequest) Logo(logo Logo) ApiPatchStoresStoreIdTerminalLogosRequest {
 	r.logo = &logo
 	return r

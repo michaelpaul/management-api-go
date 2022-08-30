@@ -20,10 +20,6 @@ import (
 	"strings"
 )
 
-// Linger please
-var (
-	_ context.Context
-)
 
 // MyAPICredentialApiService MyAPICredentialApi service
 type MyAPICredentialApiService service
@@ -33,7 +29,6 @@ type ApiDeleteMeAllowedOriginsOriginIdRequest struct {
 	ApiService *MyAPICredentialApiService
 	originId string
 }
-
 
 func (r ApiDeleteMeAllowedOriginsOriginIdRequest) Execute() (*http.Response, error) {
 	return r.ApiService.DeleteMeAllowedOriginsOriginIdExecute(r)
@@ -191,7 +186,6 @@ type ApiGetMeRequest struct {
 	ctx context.Context
 	ApiService *MyAPICredentialApiService
 }
-
 
 func (r ApiGetMeRequest) Execute() (*MeApiCredential, *http.Response, error) {
 	return r.ApiService.GetMeExecute(r)
@@ -357,7 +351,6 @@ type ApiGetMeAllowedOriginsRequest struct {
 	ApiService *MyAPICredentialApiService
 }
 
-
 func (r ApiGetMeAllowedOriginsRequest) Execute() (*AllowedOriginsResponse, *http.Response, error) {
 	return r.ApiService.GetMeAllowedOriginsExecute(r)
 }
@@ -522,7 +515,6 @@ type ApiGetMeAllowedOriginsOriginIdRequest struct {
 	ApiService *MyAPICredentialApiService
 	originId string
 }
-
 
 func (r ApiGetMeAllowedOriginsOriginIdRequest) Execute() (*AllowedOrigin, *http.Response, error) {
 	return r.ApiService.GetMeAllowedOriginsOriginIdExecute(r)

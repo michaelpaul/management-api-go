@@ -20,10 +20,6 @@ import (
 	"strings"
 )
 
-// Linger please
-var (
-	_ context.Context
-)
 
 // WebhooksMerchantLevelApiService WebhooksMerchantLevelApi service
 type WebhooksMerchantLevelApiService service
@@ -34,7 +30,6 @@ type ApiDeleteMerchantsMerchantIdWebhooksWebhookIdRequest struct {
 	merchantId string
 	webhookId string
 }
-
 
 func (r ApiDeleteMerchantsMerchantIdWebhooksWebhookIdRequest) Execute() (*http.Response, error) {
 	return r.ApiService.DeleteMerchantsMerchantIdWebhooksWebhookIdExecute(r)
@@ -204,6 +199,7 @@ func (r ApiGetMerchantsMerchantIdWebhooksRequest) PageNumber(pageNumber int32) A
 	r.pageNumber = &pageNumber
 	return r
 }
+
 // The number of items to have on a page, maximum 100. The default is 10 items on a page.
 func (r ApiGetMerchantsMerchantIdWebhooksRequest) PageSize(pageSize int32) ApiGetMerchantsMerchantIdWebhooksRequest {
 	r.pageSize = &pageSize
@@ -386,7 +382,6 @@ type ApiGetMerchantsMerchantIdWebhooksWebhookIdRequest struct {
 	merchantId string
 	webhookId string
 }
-
 
 func (r ApiGetMerchantsMerchantIdWebhooksWebhookIdRequest) Execute() (*Webhook, *http.Response, error) {
 	return r.ApiService.GetMerchantsMerchantIdWebhooksWebhookIdExecute(r)
@@ -919,7 +914,6 @@ type ApiPostMerchantsMerchantIdWebhooksWebhookIdGenerateHmacRequest struct {
 	merchantId string
 	webhookId string
 }
-
 
 func (r ApiPostMerchantsMerchantIdWebhooksWebhookIdGenerateHmacRequest) Execute() (*GenerateHmacKeyResponse, *http.Response, error) {
 	return r.ApiService.PostMerchantsMerchantIdWebhooksWebhookIdGenerateHmacExecute(r)

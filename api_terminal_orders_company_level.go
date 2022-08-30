@@ -20,10 +20,6 @@ import (
 	"strings"
 )
 
-// Linger please
-var (
-	_ context.Context
-)
 
 // TerminalOrdersCompanyLevelApiService TerminalOrdersCompanyLevelApi service
 type TerminalOrdersCompanyLevelApiService service
@@ -223,11 +219,13 @@ func (r ApiGetCompaniesCompanyIdShippingLocationsRequest) Name(name string) ApiG
 	r.name = &name
 	return r
 }
+
 // The number of locations to skip.
 func (r ApiGetCompaniesCompanyIdShippingLocationsRequest) Offset(offset int32) ApiGetCompaniesCompanyIdShippingLocationsRequest {
 	r.offset = &offset
 	return r
 }
+
 // The number of locations to return.
 func (r ApiGetCompaniesCompanyIdShippingLocationsRequest) Limit(limit int32) ApiGetCompaniesCompanyIdShippingLocationsRequest {
 	r.limit = &limit
@@ -414,7 +412,6 @@ type ApiGetCompaniesCompanyIdTerminalModelsRequest struct {
 	companyId string
 }
 
-
 func (r ApiGetCompaniesCompanyIdTerminalModelsRequest) Execute() (*TerminalModelsResponse, *http.Response, error) {
 	return r.ApiService.GetCompaniesCompanyIdTerminalModelsExecute(r)
 }
@@ -595,16 +592,19 @@ func (r ApiGetCompaniesCompanyIdTerminalOrdersRequest) CustomerOrderReference(cu
 	r.customerOrderReference = &customerOrderReference
 	return r
 }
+
 // The order status. Possible values (not case-sensitive): Placed, Confirmed, Cancelled, Shipped, Delivered.
 func (r ApiGetCompaniesCompanyIdTerminalOrdersRequest) Status(status string) ApiGetCompaniesCompanyIdTerminalOrdersRequest {
 	r.status = &status
 	return r
 }
+
 // The number of orders to skip.
 func (r ApiGetCompaniesCompanyIdTerminalOrdersRequest) Offset(offset int32) ApiGetCompaniesCompanyIdTerminalOrdersRequest {
 	r.offset = &offset
 	return r
 }
+
 // The number of orders to return.
 func (r ApiGetCompaniesCompanyIdTerminalOrdersRequest) Limit(limit int32) ApiGetCompaniesCompanyIdTerminalOrdersRequest {
 	r.limit = &limit
@@ -795,7 +795,6 @@ type ApiGetCompaniesCompanyIdTerminalOrdersOrderIdRequest struct {
 	orderId string
 }
 
-
 func (r ApiGetCompaniesCompanyIdTerminalOrdersOrderIdRequest) Execute() (*TerminalOrder, *http.Response, error) {
 	return r.ApiService.GetCompaniesCompanyIdTerminalOrdersOrderIdExecute(r)
 }
@@ -978,16 +977,19 @@ func (r ApiGetCompaniesCompanyIdTerminalProductsRequest) Country(country string)
 	r.country = &country
 	return r
 }
+
 // The terminal model to return products for. Use the ID returned in the [GET &#x60;/terminalModels&#x60;](https://docs.adyen.com/api-explorer/#/ManagementService/latest/get/terminalModels) response. For example, **Verifone.M400**
 func (r ApiGetCompaniesCompanyIdTerminalProductsRequest) TerminalModelId(terminalModelId string) ApiGetCompaniesCompanyIdTerminalProductsRequest {
 	r.terminalModelId = &terminalModelId
 	return r
 }
+
 // The number of products to skip.
 func (r ApiGetCompaniesCompanyIdTerminalProductsRequest) Offset(offset int32) ApiGetCompaniesCompanyIdTerminalProductsRequest {
 	r.offset = &offset
 	return r
 }
+
 // The number of products to return.
 func (r ApiGetCompaniesCompanyIdTerminalProductsRequest) Limit(limit int32) ApiGetCompaniesCompanyIdTerminalProductsRequest {
 	r.limit = &limit
@@ -1717,7 +1719,6 @@ type ApiPostCompaniesCompanyIdTerminalOrdersOrderIdCancelRequest struct {
 	companyId string
 	orderId string
 }
-
 
 func (r ApiPostCompaniesCompanyIdTerminalOrdersOrderIdCancelRequest) Execute() (*TerminalOrder, *http.Response, error) {
 	return r.ApiService.PostCompaniesCompanyIdTerminalOrdersOrderIdCancelExecute(r)

@@ -20,10 +20,6 @@ import (
 	"strings"
 )
 
-// Linger please
-var (
-	_ context.Context
-)
 
 // TerminalSettingsCompanyLevelApiService TerminalSettingsCompanyLevelApi service
 type TerminalSettingsCompanyLevelApiService service
@@ -217,7 +213,6 @@ type ApiGetCompaniesCompanyIdTerminalSettingsRequest struct {
 	companyId string
 }
 
-
 func (r ApiGetCompaniesCompanyIdTerminalSettingsRequest) Execute() (*TerminalSettings, *http.Response, error) {
 	return r.ApiService.GetCompaniesCompanyIdTerminalSettingsExecute(r)
 }
@@ -395,6 +390,7 @@ func (r ApiPatchCompaniesCompanyIdTerminalLogosRequest) Model(model string) ApiP
 	r.model = &model
 	return r
 }
+
 func (r ApiPatchCompaniesCompanyIdTerminalLogosRequest) Logo(logo Logo) ApiPatchCompaniesCompanyIdTerminalLogosRequest {
 	r.logo = &logo
 	return r

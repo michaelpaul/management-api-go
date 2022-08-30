@@ -216,7 +216,7 @@ func (o *ApiCredentialLinks) GetSelf() LinksElement {
 // GetSelfOk returns a tuple with the Self field value
 // and a boolean to check if the value has been set.
 func (o *ApiCredentialLinks) GetSelfOk() (*LinksElement, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.Self, true

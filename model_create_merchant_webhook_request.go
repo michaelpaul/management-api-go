@@ -176,7 +176,7 @@ func (o *CreateMerchantWebhookRequest) GetActive() bool {
 // GetActiveOk returns a tuple with the Active field value
 // and a boolean to check if the value has been set.
 func (o *CreateMerchantWebhookRequest) GetActiveOk() (*bool, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.Active, true
@@ -232,7 +232,7 @@ func (o *CreateMerchantWebhookRequest) GetCommunicationFormat() string {
 // GetCommunicationFormatOk returns a tuple with the CommunicationFormat field value
 // and a boolean to check if the value has been set.
 func (o *CreateMerchantWebhookRequest) GetCommunicationFormatOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.CommunicationFormat, true
@@ -416,7 +416,7 @@ func (o *CreateMerchantWebhookRequest) GetType() string {
 // GetTypeOk returns a tuple with the Type field value
 // and a boolean to check if the value has been set.
 func (o *CreateMerchantWebhookRequest) GetTypeOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.Type, true
@@ -440,7 +440,7 @@ func (o *CreateMerchantWebhookRequest) GetUrl() string {
 // GetUrlOk returns a tuple with the Url field value
 // and a boolean to check if the value has been set.
 func (o *CreateMerchantWebhookRequest) GetUrlOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.Url, true

@@ -20,10 +20,6 @@ import (
 	"strings"
 )
 
-// Linger please
-var (
-	_ context.Context
-)
 
 // ClientKeyMerchantLevelApiService ClientKeyMerchantLevelApi service
 type ClientKeyMerchantLevelApiService service
@@ -34,7 +30,6 @@ type ApiPostMerchantsMerchantIdApiCredentialsApiCredentialIdGenerateClientKeyReq
 	merchantId string
 	apiCredentialId string
 }
-
 
 func (r ApiPostMerchantsMerchantIdApiCredentialsApiCredentialIdGenerateClientKeyRequest) Execute() (*GenerateClientKeyResponse, *http.Response, error) {
 	return r.ApiService.PostMerchantsMerchantIdApiCredentialsApiCredentialIdGenerateClientKeyExecute(r)

@@ -129,7 +129,7 @@ func (o *CreateCompanyUserRequest) GetEmail() string {
 // GetEmailOk returns a tuple with the Email field value
 // and a boolean to check if the value has been set.
 func (o *CreateCompanyUserRequest) GetEmailOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.Email, true
@@ -153,7 +153,7 @@ func (o *CreateCompanyUserRequest) GetName() Name {
 // GetNameOk returns a tuple with the Name field value
 // and a boolean to check if the value has been set.
 func (o *CreateCompanyUserRequest) GetNameOk() (*Name, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.Name, true
@@ -241,7 +241,7 @@ func (o *CreateCompanyUserRequest) GetUsername() string {
 // GetUsernameOk returns a tuple with the Username field value
 // and a boolean to check if the value has been set.
 func (o *CreateCompanyUserRequest) GetUsernameOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.Username, true

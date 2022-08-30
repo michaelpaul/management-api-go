@@ -166,7 +166,7 @@ func (o *CreateUserResponse) GetEmail() string {
 // GetEmailOk returns a tuple with the Email field value
 // and a boolean to check if the value has been set.
 func (o *CreateUserResponse) GetEmailOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.Email, true
@@ -190,7 +190,7 @@ func (o *CreateUserResponse) GetId() string {
 // GetIdOk returns a tuple with the Id field value
 // and a boolean to check if the value has been set.
 func (o *CreateUserResponse) GetIdOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.Id, true
@@ -246,7 +246,7 @@ func (o *CreateUserResponse) GetRoles() []string {
 // GetRolesOk returns a tuple with the Roles field value
 // and a boolean to check if the value has been set.
 func (o *CreateUserResponse) GetRolesOk() ([]string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return o.Roles, true
@@ -270,7 +270,7 @@ func (o *CreateUserResponse) GetTimeZoneCode() string {
 // GetTimeZoneCodeOk returns a tuple with the TimeZoneCode field value
 // and a boolean to check if the value has been set.
 func (o *CreateUserResponse) GetTimeZoneCodeOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.TimeZoneCode, true
@@ -294,7 +294,7 @@ func (o *CreateUserResponse) GetUsername() string {
 // GetUsernameOk returns a tuple with the Username field value
 // and a boolean to check if the value has been set.
 func (o *CreateUserResponse) GetUsernameOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.Username, true

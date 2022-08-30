@@ -20,10 +20,6 @@ import (
 	"strings"
 )
 
-// Linger please
-var (
-	_ context.Context
-)
 
 // TerminalSettingsMerchantLevelApiService TerminalSettingsMerchantLevelApi service
 type TerminalSettingsMerchantLevelApiService service
@@ -217,7 +213,6 @@ type ApiGetMerchantsMerchantIdTerminalSettingsRequest struct {
 	merchantId string
 }
 
-
 func (r ApiGetMerchantsMerchantIdTerminalSettingsRequest) Execute() (*TerminalSettings, *http.Response, error) {
 	return r.ApiService.GetMerchantsMerchantIdTerminalSettingsExecute(r)
 }
@@ -395,6 +390,7 @@ func (r ApiPatchMerchantsMerchantIdTerminalLogosRequest) Model(model string) Api
 	r.model = &model
 	return r
 }
+
 func (r ApiPatchMerchantsMerchantIdTerminalLogosRequest) Logo(logo Logo) ApiPatchMerchantsMerchantIdTerminalLogosRequest {
 	r.logo = &logo
 	return r

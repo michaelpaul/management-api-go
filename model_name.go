@@ -55,7 +55,7 @@ func (o *Name) GetFirstName() string {
 // GetFirstNameOk returns a tuple with the FirstName field value
 // and a boolean to check if the value has been set.
 func (o *Name) GetFirstNameOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.FirstName, true
@@ -79,7 +79,7 @@ func (o *Name) GetLastName() string {
 // GetLastNameOk returns a tuple with the LastName field value
 // and a boolean to check if the value has been set.
 func (o *Name) GetLastNameOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.LastName, true

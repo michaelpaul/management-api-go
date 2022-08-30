@@ -86,7 +86,7 @@ func (o *MerchantLinks) GetSelf() LinksElement {
 // GetSelfOk returns a tuple with the Self field value
 // and a boolean to check if the value has been set.
 func (o *MerchantLinks) GetSelfOk() (*LinksElement, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.Self, true

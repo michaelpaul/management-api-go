@@ -55,7 +55,7 @@ func (o *SofortInfo) GetCurrencyCode() string {
 // GetCurrencyCodeOk returns a tuple with the CurrencyCode field value
 // and a boolean to check if the value has been set.
 func (o *SofortInfo) GetCurrencyCodeOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.CurrencyCode, true
@@ -79,7 +79,7 @@ func (o *SofortInfo) GetLogo() string {
 // GetLogoOk returns a tuple with the Logo field value
 // and a boolean to check if the value has been set.
 func (o *SofortInfo) GetLogoOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.Logo, true

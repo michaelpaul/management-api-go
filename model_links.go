@@ -51,7 +51,7 @@ func (o *Links) GetSelf() LinksElement {
 // GetSelfOk returns a tuple with the Self field value
 // and a boolean to check if the value has been set.
 func (o *Links) GetSelfOk() (*LinksElement, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.Self, true

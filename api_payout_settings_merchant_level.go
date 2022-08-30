@@ -20,10 +20,6 @@ import (
 	"strings"
 )
 
-// Linger please
-var (
-	_ context.Context
-)
 
 // PayoutSettingsMerchantLevelApiService PayoutSettingsMerchantLevelApi service
 type PayoutSettingsMerchantLevelApiService service
@@ -34,7 +30,6 @@ type ApiDeleteMerchantsMerchantIdPayoutSettingsPayoutSettingsIdRequest struct {
 	merchantId string
 	payoutSettingsId string
 }
-
 
 func (r ApiDeleteMerchantsMerchantIdPayoutSettingsPayoutSettingsIdRequest) Execute() (interface{}, *http.Response, error) {
 	return r.ApiService.DeleteMerchantsMerchantIdPayoutSettingsPayoutSettingsIdExecute(r)
@@ -211,7 +206,6 @@ type ApiGetMerchantsMerchantIdPayoutSettingsRequest struct {
 	merchantId string
 }
 
-
 func (r ApiGetMerchantsMerchantIdPayoutSettingsRequest) Execute() (*PayoutSettingsResponse, *http.Response, error) {
 	return r.ApiService.GetMerchantsMerchantIdPayoutSettingsExecute(r)
 }
@@ -383,7 +377,6 @@ type ApiGetMerchantsMerchantIdPayoutSettingsPayoutSettingsIdRequest struct {
 	merchantId string
 	payoutSettingsId string
 }
-
 
 func (r ApiGetMerchantsMerchantIdPayoutSettingsPayoutSettingsIdRequest) Execute() (*PayoutSettings, *http.Response, error) {
 	return r.ApiService.GetMerchantsMerchantIdPayoutSettingsPayoutSettingsIdExecute(r)

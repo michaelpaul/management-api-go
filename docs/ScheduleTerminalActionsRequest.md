@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**ActionDetails** | Pointer to [**OneOfInstallAndroidAppDetailsInstallAndroidCertificateDetailsReleaseUpdateDetailsUninstallAndroidAppDetailsUninstallAndroidCertificateDetails**](oneOf&lt;InstallAndroidAppDetails,InstallAndroidCertificateDetails,ReleaseUpdateDetails,UninstallAndroidAppDetails,UninstallAndroidCertificateDetails&gt;.md) | Information about the action to take. | [optional] 
+**ActionDetails** | Pointer to [**ScheduleTerminalActionsRequestActionDetails**](ScheduleTerminalActionsRequestActionDetails.md) |  | [optional] 
 **ScheduledAt** | Pointer to **string** | The date and time when the action should happen.  Format: [RFC 3339](https://www.rfc-editor.org/rfc/rfc3339), but without the **Z** before the time offset. For example, **2021-11-15T12:16:21+01:00**  The action is sent with the first [maintenance call](https://docs.adyen.com/point-of-sale/automating-terminal-management/terminal-actions-api#when-actions-take-effect) after the specified date and time in the time zone of the terminal.  An empty value causes the action to be sent as soon as possible: at the next maintenance call. | [optional] 
 **StoreId** | Pointer to **string** | The unique ID of the [store](https://docs.adyen.com/api-explorer/#/ManagementService/latest/get/stores). If present, all terminals in the &#x60;terminalIds&#x60; list must be assigned to this store. | [optional] 
 **TerminalIds** | Pointer to **[]string** | A list of unique IDs of the terminals to apply the action to. You can extract the IDs from the [GET &#x60;/terminals&#x60;](https://docs.adyen.com/api-explorer/#/ManagementService/latest/get/terminals) response. Maximum length: 100 IDs. | [optional] 
@@ -30,20 +30,20 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetActionDetails
 
-`func (o *ScheduleTerminalActionsRequest) GetActionDetails() OneOfInstallAndroidAppDetailsInstallAndroidCertificateDetailsReleaseUpdateDetailsUninstallAndroidAppDetailsUninstallAndroidCertificateDetails`
+`func (o *ScheduleTerminalActionsRequest) GetActionDetails() ScheduleTerminalActionsRequestActionDetails`
 
 GetActionDetails returns the ActionDetails field if non-nil, zero value otherwise.
 
 ### GetActionDetailsOk
 
-`func (o *ScheduleTerminalActionsRequest) GetActionDetailsOk() (*OneOfInstallAndroidAppDetailsInstallAndroidCertificateDetailsReleaseUpdateDetailsUninstallAndroidAppDetailsUninstallAndroidCertificateDetails, bool)`
+`func (o *ScheduleTerminalActionsRequest) GetActionDetailsOk() (*ScheduleTerminalActionsRequestActionDetails, bool)`
 
 GetActionDetailsOk returns a tuple with the ActionDetails field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetActionDetails
 
-`func (o *ScheduleTerminalActionsRequest) SetActionDetails(v OneOfInstallAndroidAppDetailsInstallAndroidCertificateDetailsReleaseUpdateDetailsUninstallAndroidAppDetailsUninstallAndroidCertificateDetails)`
+`func (o *ScheduleTerminalActionsRequest) SetActionDetails(v ScheduleTerminalActionsRequestActionDetails)`
 
 SetActionDetails sets ActionDetails field to given value.
 
@@ -53,16 +53,6 @@ SetActionDetails sets ActionDetails field to given value.
 
 HasActionDetails returns a boolean if a field has been set.
 
-### SetActionDetailsNil
-
-`func (o *ScheduleTerminalActionsRequest) SetActionDetailsNil(b bool)`
-
- SetActionDetailsNil sets the value for ActionDetails to be an explicit nil
-
-### UnsetActionDetails
-`func (o *ScheduleTerminalActionsRequest) UnsetActionDetails()`
-
-UnsetActionDetails ensures that no value is present for ActionDetails, not even an explicit nil
 ### GetScheduledAt
 
 `func (o *ScheduleTerminalActionsRequest) GetScheduledAt() string`

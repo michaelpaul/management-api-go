@@ -85,7 +85,7 @@ func (o *Profile) GetAuthType() string {
 // GetAuthTypeOk returns a tuple with the AuthType field value
 // and a boolean to check if the value has been set.
 func (o *Profile) GetAuthTypeOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.AuthType, true
@@ -141,7 +141,7 @@ func (o *Profile) GetBssType() string {
 // GetBssTypeOk returns a tuple with the BssType field value
 // and a boolean to check if the value has been set.
 func (o *Profile) GetBssTypeOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.BssType, true
@@ -581,7 +581,7 @@ func (o *Profile) GetSsid() string {
 // GetSsidOk returns a tuple with the Ssid field value
 // and a boolean to check if the value has been set.
 func (o *Profile) GetSsidOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.Ssid, true
@@ -605,7 +605,7 @@ func (o *Profile) GetWsec() string {
 // GetWsecOk returns a tuple with the Wsec field value
 // and a boolean to check if the value has been set.
 func (o *Profile) GetWsecOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.Wsec, true

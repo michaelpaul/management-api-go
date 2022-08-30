@@ -161,7 +161,7 @@ func (o *PayoutSettings) GetId() string {
 // GetIdOk returns a tuple with the Id field value
 // and a boolean to check if the value has been set.
 func (o *PayoutSettings) GetIdOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.Id, true
@@ -217,7 +217,7 @@ func (o *PayoutSettings) GetTransferInstrumentId() string {
 // GetTransferInstrumentIdOk returns a tuple with the TransferInstrumentId field value
 // and a boolean to check if the value has been set.
 func (o *PayoutSettings) GetTransferInstrumentIdOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.TransferInstrumentId, true

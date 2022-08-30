@@ -96,7 +96,7 @@ func (o *Address2) GetCountry() string {
 // GetCountryOk returns a tuple with the Country field value
 // and a boolean to check if the value has been set.
 func (o *Address2) GetCountryOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.Country, true

@@ -55,7 +55,7 @@ func (o *Amount2) GetCurrency() string {
 // GetCurrencyOk returns a tuple with the Currency field value
 // and a boolean to check if the value has been set.
 func (o *Amount2) GetCurrencyOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.Currency, true
@@ -79,7 +79,7 @@ func (o *Amount2) GetValue() int64 {
 // GetValueOk returns a tuple with the Value field value
 // and a boolean to check if the value has been set.
 func (o *Amount2) GetValueOk() (*int64, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.Value, true

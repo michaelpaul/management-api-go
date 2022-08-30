@@ -20,10 +20,6 @@ import (
 	"strings"
 )
 
-// Linger please
-var (
-	_ context.Context
-)
 
 // PaymentMethodsMerchantLevelApiService PaymentMethodsMerchantLevelApi service
 type PaymentMethodsMerchantLevelApiService service
@@ -43,16 +39,19 @@ func (r ApiGetMerchantsMerchantIdPaymentMethodSettingsRequest) StoreId(storeId s
 	r.storeId = &storeId
 	return r
 }
+
 // The unique identifier of the Business Line for which to return the payment methods.
 func (r ApiGetMerchantsMerchantIdPaymentMethodSettingsRequest) BusinessLineId(businessLineId string) ApiGetMerchantsMerchantIdPaymentMethodSettingsRequest {
 	r.businessLineId = &businessLineId
 	return r
 }
+
 // The number of items to have on a page, maximum 100. The default is 10 items on a page.
 func (r ApiGetMerchantsMerchantIdPaymentMethodSettingsRequest) PageSize(pageSize int32) ApiGetMerchantsMerchantIdPaymentMethodSettingsRequest {
 	r.pageSize = &pageSize
 	return r
 }
+
 // The number of the page to fetch.
 func (r ApiGetMerchantsMerchantIdPaymentMethodSettingsRequest) PageNumber(pageNumber int32) ApiGetMerchantsMerchantIdPaymentMethodSettingsRequest {
 	r.pageNumber = &pageNumber
@@ -241,7 +240,6 @@ type ApiGetMerchantsMerchantIdPaymentMethodSettingsPaymentMethodIdRequest struct
 	merchantId string
 	paymentMethodId string
 }
-
 
 func (r ApiGetMerchantsMerchantIdPaymentMethodSettingsPaymentMethodIdRequest) Execute() (*PaymentMethod, *http.Response, error) {
 	return r.ApiService.GetMerchantsMerchantIdPaymentMethodSettingsPaymentMethodIdExecute(r)

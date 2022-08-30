@@ -87,7 +87,7 @@ func (o *AllowedOrigin) GetDomain() string {
 // GetDomainOk returns a tuple with the Domain field value
 // and a boolean to check if the value has been set.
 func (o *AllowedOrigin) GetDomainOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.Domain, true

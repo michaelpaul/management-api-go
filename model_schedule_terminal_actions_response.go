@@ -17,8 +17,7 @@ import (
 
 // ScheduleTerminalActionsResponse struct for ScheduleTerminalActionsResponse
 type ScheduleTerminalActionsResponse struct {
-	// Information about the action to take.
-	ActionDetails OneOfInstallAndroidAppDetailsInstallAndroidCertificateDetailsReleaseUpdateDetailsUninstallAndroidAppDetailsUninstallAndroidCertificateDetails `json:"actionDetails,omitempty"`
+	ActionDetails *ScheduleTerminalActionsRequestActionDetails `json:"actionDetails,omitempty"`
 	Items []TerminalActionScheduleDetail `json:"items,omitempty"`
 	// The date and time when the action should happen.  Format: [RFC 3339](https://www.rfc-editor.org/rfc/rfc3339), but without the **Z** before the time offset. For example, **2021-11-15T12:16:21+01:00**  The action is sent with the first [maintenance call](https://docs.adyen.com/point-of-sale/automating-terminal-management/terminal-actions-api#when-actions-take-effect) after the specified date and time in the time zone of the terminal.  An empty value causes the action to be sent as soon as possible: at the next maintenance call.
 	ScheduledAt *string `json:"scheduledAt,omitempty"`
@@ -52,23 +51,22 @@ func NewScheduleTerminalActionsResponseWithDefaults() *ScheduleTerminalActionsRe
 	return &this
 }
 
-// GetActionDetails returns the ActionDetails field value if set, zero value otherwise (both if not set or set to explicit null).
-func (o *ScheduleTerminalActionsResponse) GetActionDetails() OneOfInstallAndroidAppDetailsInstallAndroidCertificateDetailsReleaseUpdateDetailsUninstallAndroidAppDetailsUninstallAndroidCertificateDetails {
-	if o == nil  {
-		var ret OneOfInstallAndroidAppDetailsInstallAndroidCertificateDetailsReleaseUpdateDetailsUninstallAndroidAppDetailsUninstallAndroidCertificateDetails
+// GetActionDetails returns the ActionDetails field value if set, zero value otherwise.
+func (o *ScheduleTerminalActionsResponse) GetActionDetails() ScheduleTerminalActionsRequestActionDetails {
+	if o == nil || o.ActionDetails == nil {
+		var ret ScheduleTerminalActionsRequestActionDetails
 		return ret
 	}
-	return o.ActionDetails
+	return *o.ActionDetails
 }
 
 // GetActionDetailsOk returns a tuple with the ActionDetails field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-// NOTE: If the value is an explicit nil, `nil, true` will be returned
-func (o *ScheduleTerminalActionsResponse) GetActionDetailsOk() (*OneOfInstallAndroidAppDetailsInstallAndroidCertificateDetailsReleaseUpdateDetailsUninstallAndroidAppDetailsUninstallAndroidCertificateDetails, bool) {
+func (o *ScheduleTerminalActionsResponse) GetActionDetailsOk() (*ScheduleTerminalActionsRequestActionDetails, bool) {
 	if o == nil || o.ActionDetails == nil {
 		return nil, false
 	}
-	return &o.ActionDetails, true
+	return o.ActionDetails, true
 }
 
 // HasActionDetails returns a boolean if a field has been set.
@@ -80,9 +78,9 @@ func (o *ScheduleTerminalActionsResponse) HasActionDetails() bool {
 	return false
 }
 
-// SetActionDetails gets a reference to the given OneOfInstallAndroidAppDetailsInstallAndroidCertificateDetailsReleaseUpdateDetailsUninstallAndroidAppDetailsUninstallAndroidCertificateDetails and assigns it to the ActionDetails field.
-func (o *ScheduleTerminalActionsResponse) SetActionDetails(v OneOfInstallAndroidAppDetailsInstallAndroidCertificateDetailsReleaseUpdateDetailsUninstallAndroidAppDetailsUninstallAndroidCertificateDetails) {
-	o.ActionDetails = v
+// SetActionDetails gets a reference to the given ScheduleTerminalActionsRequestActionDetails and assigns it to the ActionDetails field.
+func (o *ScheduleTerminalActionsResponse) SetActionDetails(v ScheduleTerminalActionsRequestActionDetails) {
+	o.ActionDetails = &v
 }
 
 // GetItems returns the Items field value if set, zero value otherwise.

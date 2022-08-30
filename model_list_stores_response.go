@@ -121,7 +121,7 @@ func (o *ListStoresResponse) GetItemsTotal() int32 {
 // GetItemsTotalOk returns a tuple with the ItemsTotal field value
 // and a boolean to check if the value has been set.
 func (o *ListStoresResponse) GetItemsTotalOk() (*int32, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.ItemsTotal, true
@@ -145,7 +145,7 @@ func (o *ListStoresResponse) GetPagesTotal() int32 {
 // GetPagesTotalOk returns a tuple with the PagesTotal field value
 // and a boolean to check if the value has been set.
 func (o *ListStoresResponse) GetPagesTotalOk() (*int32, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.PagesTotal, true

@@ -20,10 +20,6 @@ import (
 	"strings"
 )
 
-// Linger please
-var (
-	_ context.Context
-)
 
 // TerminalSettingsTerminalLevelApiService TerminalSettingsTerminalLevelApi service
 type TerminalSettingsTerminalLevelApiService service
@@ -33,7 +29,6 @@ type ApiGetTerminalsTerminalIdTerminalLogosRequest struct {
 	ApiService *TerminalSettingsTerminalLevelApiService
 	terminalId string
 }
-
 
 func (r ApiGetTerminalsTerminalIdTerminalLogosRequest) Execute() (*Logo, *http.Response, error) {
 	return r.ApiService.GetTerminalsTerminalIdTerminalLogosExecute(r)
@@ -205,7 +200,6 @@ type ApiGetTerminalsTerminalIdTerminalSettingsRequest struct {
 	ApiService *TerminalSettingsTerminalLevelApiService
 	terminalId string
 }
-
 
 func (r ApiGetTerminalsTerminalIdTerminalSettingsRequest) Execute() (*TerminalSettings, *http.Response, error) {
 	return r.ApiService.GetTerminalsTerminalIdTerminalSettingsExecute(r)

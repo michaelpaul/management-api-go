@@ -88,7 +88,7 @@ func (o *Currency) GetCurrencyCode() string {
 // GetCurrencyCodeOk returns a tuple with the CurrencyCode field value
 // and a boolean to check if the value has been set.
 func (o *Currency) GetCurrencyCodeOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.CurrencyCode, true

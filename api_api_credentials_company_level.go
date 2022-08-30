@@ -20,10 +20,6 @@ import (
 	"strings"
 )
 
-// Linger please
-var (
-	_ context.Context
-)
 
 // APICredentialsCompanyLevelApiService APICredentialsCompanyLevelApi service
 type APICredentialsCompanyLevelApiService service
@@ -41,6 +37,7 @@ func (r ApiGetCompaniesCompanyIdApiCredentialsRequest) PageNumber(pageNumber int
 	r.pageNumber = &pageNumber
 	return r
 }
+
 // The number of items to have on a page, maximum 100. The default is 10 items on a page.
 func (r ApiGetCompaniesCompanyIdApiCredentialsRequest) PageSize(pageSize int32) ApiGetCompaniesCompanyIdApiCredentialsRequest {
 	r.pageSize = &pageSize
@@ -222,7 +219,6 @@ type ApiGetCompaniesCompanyIdApiCredentialsApiCredentialIdRequest struct {
 	companyId string
 	apiCredentialId string
 }
-
 
 func (r ApiGetCompaniesCompanyIdApiCredentialsApiCredentialIdRequest) Execute() (*CompanyApiCredential, *http.Response, error) {
 	return r.ApiService.GetCompaniesCompanyIdApiCredentialsApiCredentialIdExecute(r)

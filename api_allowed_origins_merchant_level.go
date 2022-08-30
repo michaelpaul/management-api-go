@@ -20,10 +20,6 @@ import (
 	"strings"
 )
 
-// Linger please
-var (
-	_ context.Context
-)
 
 // AllowedOriginsMerchantLevelApiService AllowedOriginsMerchantLevelApi service
 type AllowedOriginsMerchantLevelApiService service
@@ -35,7 +31,6 @@ type ApiDeleteMerchantsMerchantIdApiCredentialsApiCredentialIdAllowedOriginsOrig
 	apiCredentialId string
 	originId string
 }
-
 
 func (r ApiDeleteMerchantsMerchantIdApiCredentialsApiCredentialIdAllowedOriginsOriginIdRequest) Execute() (*http.Response, error) {
 	return r.ApiService.DeleteMerchantsMerchantIdApiCredentialsApiCredentialIdAllowedOriginsOriginIdExecute(r)
@@ -201,7 +196,6 @@ type ApiGetMerchantsMerchantIdApiCredentialsApiCredentialIdAllowedOriginsRequest
 	merchantId string
 	apiCredentialId string
 }
-
 
 func (r ApiGetMerchantsMerchantIdApiCredentialsApiCredentialIdAllowedOriginsRequest) Execute() (*AllowedOriginsResponse, *http.Response, error) {
 	return r.ApiService.GetMerchantsMerchantIdApiCredentialsApiCredentialIdAllowedOriginsExecute(r)
@@ -376,7 +370,6 @@ type ApiGetMerchantsMerchantIdApiCredentialsApiCredentialIdAllowedOriginsOriginI
 	apiCredentialId string
 	originId string
 }
-
 
 func (r ApiGetMerchantsMerchantIdApiCredentialsApiCredentialIdAllowedOriginsOriginIdRequest) Execute() (*AllowedOrigin, *http.Response, error) {
 	return r.ApiService.GetMerchantsMerchantIdApiCredentialsApiCredentialIdAllowedOriginsOriginIdExecute(r)

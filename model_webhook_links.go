@@ -89,7 +89,7 @@ func (o *WebhookLinks) GetGenerateHmac() LinksElement {
 // GetGenerateHmacOk returns a tuple with the GenerateHmac field value
 // and a boolean to check if the value has been set.
 func (o *WebhookLinks) GetGenerateHmacOk() (*LinksElement, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.GenerateHmac, true
@@ -145,7 +145,7 @@ func (o *WebhookLinks) GetSelf() LinksElement {
 // GetSelfOk returns a tuple with the Self field value
 // and a boolean to check if the value has been set.
 func (o *WebhookLinks) GetSelfOk() (*LinksElement, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.Self, true
@@ -169,7 +169,7 @@ func (o *WebhookLinks) GetTestWebhook() LinksElement {
 // GetTestWebhookOk returns a tuple with the TestWebhook field value
 // and a boolean to check if the value has been set.
 func (o *WebhookLinks) GetTestWebhookOk() (*LinksElement, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.TestWebhook, true

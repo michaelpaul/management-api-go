@@ -73,7 +73,7 @@ func (o *Amount) SetCurrency(v string) {
 
 // GetValue returns the Value field value if set, zero value otherwise (both if not set or set to explicit null).
 func (o *Amount) GetValue() interface{} {
-	if o == nil  {
+	if o == nil {
 		var ret interface{}
 		return ret
 	}

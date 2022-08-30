@@ -52,7 +52,7 @@ func (o *CartesBancairesInfo) GetSiret() string {
 // GetSiretOk returns a tuple with the Siret field value
 // and a boolean to check if the value has been set.
 func (o *CartesBancairesInfo) GetSiretOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.Siret, true

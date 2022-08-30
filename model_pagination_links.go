@@ -57,7 +57,7 @@ func (o *PaginationLinks) GetFirst() LinksElement {
 // GetFirstOk returns a tuple with the First field value
 // and a boolean to check if the value has been set.
 func (o *PaginationLinks) GetFirstOk() (*LinksElement, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.First, true
@@ -81,7 +81,7 @@ func (o *PaginationLinks) GetLast() LinksElement {
 // GetLastOk returns a tuple with the Last field value
 // and a boolean to check if the value has been set.
 func (o *PaginationLinks) GetLastOk() (*LinksElement, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.Last, true
@@ -169,7 +169,7 @@ func (o *PaginationLinks) GetSelf() LinksElement {
 // GetSelfOk returns a tuple with the Self field value
 // and a boolean to check if the value has been set.
 func (o *PaginationLinks) GetSelfOk() (*LinksElement, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.Self, true

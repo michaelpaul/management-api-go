@@ -20,10 +20,6 @@ import (
 	"strings"
 )
 
-// Linger please
-var (
-	_ context.Context
-)
 
 // WebhooksCompanyLevelApiService WebhooksCompanyLevelApi service
 type WebhooksCompanyLevelApiService service
@@ -34,7 +30,6 @@ type ApiDeleteCompaniesCompanyIdWebhooksWebhookIdRequest struct {
 	companyId string
 	webhookId string
 }
-
 
 func (r ApiDeleteCompaniesCompanyIdWebhooksWebhookIdRequest) Execute() (*http.Response, error) {
 	return r.ApiService.DeleteCompaniesCompanyIdWebhooksWebhookIdExecute(r)
@@ -204,6 +199,7 @@ func (r ApiGetCompaniesCompanyIdWebhooksRequest) PageNumber(pageNumber int32) Ap
 	r.pageNumber = &pageNumber
 	return r
 }
+
 // The number of items to have on a page, maximum 100. The default is 10 items on a page.
 func (r ApiGetCompaniesCompanyIdWebhooksRequest) PageSize(pageSize int32) ApiGetCompaniesCompanyIdWebhooksRequest {
 	r.pageSize = &pageSize
@@ -386,7 +382,6 @@ type ApiGetCompaniesCompanyIdWebhooksWebhookIdRequest struct {
 	companyId string
 	webhookId string
 }
-
 
 func (r ApiGetCompaniesCompanyIdWebhooksWebhookIdRequest) Execute() (*Webhook, *http.Response, error) {
 	return r.ApiService.GetCompaniesCompanyIdWebhooksWebhookIdExecute(r)
@@ -919,7 +914,6 @@ type ApiPostCompaniesCompanyIdWebhooksWebhookIdGenerateHmacRequest struct {
 	companyId string
 	webhookId string
 }
-
 
 func (r ApiPostCompaniesCompanyIdWebhooksWebhookIdGenerateHmacRequest) Execute() (*GenerateHmacKeyResponse, *http.Response, error) {
 	return r.ApiService.PostCompaniesCompanyIdWebhooksWebhookIdGenerateHmacExecute(r)

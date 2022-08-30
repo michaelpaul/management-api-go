@@ -20,10 +20,6 @@ import (
 	"strings"
 )
 
-// Linger please
-var (
-	_ context.Context
-)
 
 // AllowedOriginsCompanyLevelApiService AllowedOriginsCompanyLevelApi service
 type AllowedOriginsCompanyLevelApiService service
@@ -35,7 +31,6 @@ type ApiDeleteCompaniesCompanyIdApiCredentialsApiCredentialIdAllowedOriginsOrigi
 	apiCredentialId string
 	originId string
 }
-
 
 func (r ApiDeleteCompaniesCompanyIdApiCredentialsApiCredentialIdAllowedOriginsOriginIdRequest) Execute() (*http.Response, error) {
 	return r.ApiService.DeleteCompaniesCompanyIdApiCredentialsApiCredentialIdAllowedOriginsOriginIdExecute(r)
@@ -201,7 +196,6 @@ type ApiGetCompaniesCompanyIdApiCredentialsApiCredentialIdAllowedOriginsRequest 
 	companyId string
 	apiCredentialId string
 }
-
 
 func (r ApiGetCompaniesCompanyIdApiCredentialsApiCredentialIdAllowedOriginsRequest) Execute() (*AllowedOriginsResponse, *http.Response, error) {
 	return r.ApiService.GetCompaniesCompanyIdApiCredentialsApiCredentialIdAllowedOriginsExecute(r)
@@ -376,7 +370,6 @@ type ApiGetCompaniesCompanyIdApiCredentialsApiCredentialIdAllowedOriginsOriginId
 	apiCredentialId string
 	originId string
 }
-
 
 func (r ApiGetCompaniesCompanyIdApiCredentialsApiCredentialIdAllowedOriginsOriginIdRequest) Execute() (*AllowedOrigin, *http.Response, error) {
 	return r.ApiService.GetCompaniesCompanyIdApiCredentialsApiCredentialIdAllowedOriginsOriginIdExecute(r)

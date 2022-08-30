@@ -104,7 +104,7 @@ func (o *ApiCredential) GetActive() bool {
 // GetActiveOk returns a tuple with the Active field value
 // and a boolean to check if the value has been set.
 func (o *ApiCredential) GetActiveOk() (*bool, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.Active, true
@@ -128,7 +128,7 @@ func (o *ApiCredential) GetAllowedIpAddresses() []string {
 // GetAllowedIpAddressesOk returns a tuple with the AllowedIpAddresses field value
 // and a boolean to check if the value has been set.
 func (o *ApiCredential) GetAllowedIpAddressesOk() ([]string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return o.AllowedIpAddresses, true
@@ -184,7 +184,7 @@ func (o *ApiCredential) GetClientKey() string {
 // GetClientKeyOk returns a tuple with the ClientKey field value
 // and a boolean to check if the value has been set.
 func (o *ApiCredential) GetClientKeyOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.ClientKey, true
@@ -240,7 +240,7 @@ func (o *ApiCredential) GetId() string {
 // GetIdOk returns a tuple with the Id field value
 // and a boolean to check if the value has been set.
 func (o *ApiCredential) GetIdOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.Id, true
@@ -264,7 +264,7 @@ func (o *ApiCredential) GetRoles() []string {
 // GetRolesOk returns a tuple with the Roles field value
 // and a boolean to check if the value has been set.
 func (o *ApiCredential) GetRolesOk() ([]string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return o.Roles, true
@@ -288,7 +288,7 @@ func (o *ApiCredential) GetUsername() string {
 // GetUsernameOk returns a tuple with the Username field value
 // and a boolean to check if the value has been set.
 func (o *ApiCredential) GetUsernameOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.Username, true

@@ -255,7 +255,7 @@ func (o *Webhook) GetActive() bool {
 // GetActiveOk returns a tuple with the Active field value
 // and a boolean to check if the value has been set.
 func (o *Webhook) GetActiveOk() (*bool, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.Active, true
@@ -343,7 +343,7 @@ func (o *Webhook) GetCommunicationFormat() string {
 // GetCommunicationFormatOk returns a tuple with the CommunicationFormat field value
 // and a boolean to check if the value has been set.
 func (o *Webhook) GetCommunicationFormatOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.CommunicationFormat, true
@@ -687,7 +687,7 @@ func (o *Webhook) GetType() string {
 // GetTypeOk returns a tuple with the Type field value
 // and a boolean to check if the value has been set.
 func (o *Webhook) GetTypeOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.Type, true
@@ -711,7 +711,7 @@ func (o *Webhook) GetUrl() string {
 // GetUrlOk returns a tuple with the Url field value
 // and a boolean to check if the value has been set.
 func (o *Webhook) GetUrlOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.Url, true

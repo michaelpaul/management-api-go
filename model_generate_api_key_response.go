@@ -52,7 +52,7 @@ func (o *GenerateApiKeyResponse) GetApiKey() string {
 // GetApiKeyOk returns a tuple with the ApiKey field value
 // and a boolean to check if the value has been set.
 func (o *GenerateApiKeyResponse) GetApiKeyOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.ApiKey, true

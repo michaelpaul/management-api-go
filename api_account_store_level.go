@@ -20,10 +20,6 @@ import (
 	"strings"
 )
 
-// Linger please
-var (
-	_ context.Context
-)
 
 // AccountStoreLevelApiService AccountStoreLevelApi service
 type AccountStoreLevelApiService service
@@ -42,11 +38,13 @@ func (r ApiGetMerchantsMerchantIdStoresRequest) PageNumber(pageNumber int32) Api
 	r.pageNumber = &pageNumber
 	return r
 }
+
 // The number of items to have on a page, maximum 100. The default is 10 items on a page.
 func (r ApiGetMerchantsMerchantIdStoresRequest) PageSize(pageSize int32) ApiGetMerchantsMerchantIdStoresRequest {
 	r.pageSize = &pageSize
 	return r
 }
+
 // The reference of the store.
 func (r ApiGetMerchantsMerchantIdStoresRequest) Reference(reference string) ApiGetMerchantsMerchantIdStoresRequest {
 	r.reference = &reference
@@ -233,7 +231,6 @@ type ApiGetMerchantsMerchantIdStoresStoreIdRequest struct {
 	storeId string
 }
 
-
 func (r ApiGetMerchantsMerchantIdStoresStoreIdRequest) Execute() (*Store, *http.Response, error) {
 	return r.ApiService.GetMerchantsMerchantIdStoresStoreIdExecute(r)
 }
@@ -415,16 +412,19 @@ func (r ApiGetStoresRequest) PageNumber(pageNumber int32) ApiGetStoresRequest {
 	r.pageNumber = &pageNumber
 	return r
 }
+
 // The number of items to have on a page, maximum 100. The default is 10 items on a page.
 func (r ApiGetStoresRequest) PageSize(pageSize int32) ApiGetStoresRequest {
 	r.pageSize = &pageSize
 	return r
 }
+
 // The reference of the store.
 func (r ApiGetStoresRequest) Reference(reference string) ApiGetStoresRequest {
 	r.reference = &reference
 	return r
 }
+
 // The unique identifier of the merchant account.
 func (r ApiGetStoresRequest) MerchantId(merchantId string) ApiGetStoresRequest {
 	r.merchantId = &merchantId
@@ -609,7 +609,6 @@ type ApiGetStoresStoreIdRequest struct {
 	ApiService *AccountStoreLevelApiService
 	storeId string
 }
-
 
 func (r ApiGetStoresStoreIdRequest) Execute() (*Store, *http.Response, error) {
 	return r.ApiService.GetStoresStoreIdExecute(r)

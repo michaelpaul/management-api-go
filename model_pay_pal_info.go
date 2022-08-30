@@ -92,7 +92,7 @@ func (o *PayPalInfo) GetDirectSettlement() bool {
 // GetDirectSettlementOk returns a tuple with the DirectSettlement field value
 // and a boolean to check if the value has been set.
 func (o *PayPalInfo) GetDirectSettlementOk() (*bool, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.DirectSettlement, true
@@ -116,7 +116,7 @@ func (o *PayPalInfo) GetPayerId() string {
 // GetPayerIdOk returns a tuple with the PayerId field value
 // and a boolean to check if the value has been set.
 func (o *PayPalInfo) GetPayerIdOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.PayerId, true
@@ -140,7 +140,7 @@ func (o *PayPalInfo) GetSubject() string {
 // GetSubjectOk returns a tuple with the Subject field value
 // and a boolean to check if the value has been set.
 func (o *PayPalInfo) GetSubjectOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.Subject, true

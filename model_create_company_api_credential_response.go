@@ -113,7 +113,7 @@ func (o *CreateCompanyApiCredentialResponse) GetActive() bool {
 // GetActiveOk returns a tuple with the Active field value
 // and a boolean to check if the value has been set.
 func (o *CreateCompanyApiCredentialResponse) GetActiveOk() (*bool, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.Active, true
@@ -137,7 +137,7 @@ func (o *CreateCompanyApiCredentialResponse) GetAllowedIpAddresses() []string {
 // GetAllowedIpAddressesOk returns a tuple with the AllowedIpAddresses field value
 // and a boolean to check if the value has been set.
 func (o *CreateCompanyApiCredentialResponse) GetAllowedIpAddressesOk() ([]string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return o.AllowedIpAddresses, true
@@ -193,7 +193,7 @@ func (o *CreateCompanyApiCredentialResponse) GetApiKey() string {
 // GetApiKeyOk returns a tuple with the ApiKey field value
 // and a boolean to check if the value has been set.
 func (o *CreateCompanyApiCredentialResponse) GetApiKeyOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.ApiKey, true
@@ -217,7 +217,7 @@ func (o *CreateCompanyApiCredentialResponse) GetAssociatedMerchantAccounts() []s
 // GetAssociatedMerchantAccountsOk returns a tuple with the AssociatedMerchantAccounts field value
 // and a boolean to check if the value has been set.
 func (o *CreateCompanyApiCredentialResponse) GetAssociatedMerchantAccountsOk() ([]string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return o.AssociatedMerchantAccounts, true
@@ -241,7 +241,7 @@ func (o *CreateCompanyApiCredentialResponse) GetClientKey() string {
 // GetClientKeyOk returns a tuple with the ClientKey field value
 // and a boolean to check if the value has been set.
 func (o *CreateCompanyApiCredentialResponse) GetClientKeyOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.ClientKey, true
@@ -297,7 +297,7 @@ func (o *CreateCompanyApiCredentialResponse) GetId() string {
 // GetIdOk returns a tuple with the Id field value
 // and a boolean to check if the value has been set.
 func (o *CreateCompanyApiCredentialResponse) GetIdOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.Id, true
@@ -321,7 +321,7 @@ func (o *CreateCompanyApiCredentialResponse) GetPassword() string {
 // GetPasswordOk returns a tuple with the Password field value
 // and a boolean to check if the value has been set.
 func (o *CreateCompanyApiCredentialResponse) GetPasswordOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.Password, true
@@ -345,7 +345,7 @@ func (o *CreateCompanyApiCredentialResponse) GetRoles() []string {
 // GetRolesOk returns a tuple with the Roles field value
 // and a boolean to check if the value has been set.
 func (o *CreateCompanyApiCredentialResponse) GetRolesOk() ([]string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return o.Roles, true
@@ -369,7 +369,7 @@ func (o *CreateCompanyApiCredentialResponse) GetUsername() string {
 // GetUsernameOk returns a tuple with the Username field value
 // and a boolean to check if the value has been set.
 func (o *CreateCompanyApiCredentialResponse) GetUsernameOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.Username, true

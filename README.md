@@ -308,6 +308,7 @@ Class | Method | HTTP request | Description
  - [RequestActivationResponse](docs/RequestActivationResponse.md)
  - [RestServiceError](docs/RestServiceError.md)
  - [ScheduleTerminalActionsRequest](docs/ScheduleTerminalActionsRequest.md)
+ - [ScheduleTerminalActionsRequestActionDetails](docs/ScheduleTerminalActionsRequestActionDetails.md)
  - [ScheduleTerminalActionsResponse](docs/ScheduleTerminalActionsResponse.md)
  - [Settings](docs/Settings.md)
  - [ShippingLocation](docs/ShippingLocation.md)

@@ -122,7 +122,7 @@ func (o *ListMerchantResponse) GetItemsTotal() int32 {
 // GetItemsTotalOk returns a tuple with the ItemsTotal field value
 // and a boolean to check if the value has been set.
 func (o *ListMerchantResponse) GetItemsTotalOk() (*int32, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.ItemsTotal, true
@@ -146,7 +146,7 @@ func (o *ListMerchantResponse) GetPagesTotal() int32 {
 // GetPagesTotalOk returns a tuple with the PagesTotal field value
 // and a boolean to check if the value has been set.
 func (o *ListMerchantResponse) GetPagesTotalOk() (*int32, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.PagesTotal, true

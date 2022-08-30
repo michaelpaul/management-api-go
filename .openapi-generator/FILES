@@ -143,6 +143,7 @@ docs/ReleaseUpdateDetails.md
 docs/RequestActivationResponse.md
 docs/RestServiceError.md
 docs/ScheduleTerminalActionsRequest.md
+docs/ScheduleTerminalActionsRequestActionDetails.md
 docs/ScheduleTerminalActionsResponse.md
 docs/Settings.md
 docs/ShippingLocation.md
@@ -299,6 +300,7 @@ model_release_update_details.go
 model_request_activation_response.go
 model_rest_service_error.go
 model_schedule_terminal_actions_request.go
+model_schedule_terminal_actions_request_action_details.go
 model_schedule_terminal_actions_response.go
 model_settings.go
 model_shipping_location.go

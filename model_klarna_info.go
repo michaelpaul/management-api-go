@@ -92,7 +92,7 @@ func (o *KlarnaInfo) GetDisputeEmail() string {
 // GetDisputeEmailOk returns a tuple with the DisputeEmail field value
 // and a boolean to check if the value has been set.
 func (o *KlarnaInfo) GetDisputeEmailOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.DisputeEmail, true
@@ -116,7 +116,7 @@ func (o *KlarnaInfo) GetRegion() string {
 // GetRegionOk returns a tuple with the Region field value
 // and a boolean to check if the value has been set.
 func (o *KlarnaInfo) GetRegionOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.Region, true
@@ -140,7 +140,7 @@ func (o *KlarnaInfo) GetSupportEmail() string {
 // GetSupportEmailOk returns a tuple with the SupportEmail field value
 // and a boolean to check if the value has been set.
 func (o *KlarnaInfo) GetSupportEmailOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.SupportEmail, true

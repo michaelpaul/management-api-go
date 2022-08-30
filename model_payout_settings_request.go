@@ -120,7 +120,7 @@ func (o *PayoutSettingsRequest) GetTransferInstrumentId() string {
 // GetTransferInstrumentIdOk returns a tuple with the TransferInstrumentId field value
 // and a boolean to check if the value has been set.
 func (o *PayoutSettingsRequest) GetTransferInstrumentIdOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.TransferInstrumentId, true

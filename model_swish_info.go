@@ -52,7 +52,7 @@ func (o *SwishInfo) GetSwishNumber() string {
 // GetSwishNumberOk returns a tuple with the SwishNumber field value
 // and a boolean to check if the value has been set.
 func (o *SwishInfo) GetSwishNumberOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.SwishNumber, true

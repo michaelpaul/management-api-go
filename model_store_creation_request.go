@@ -67,7 +67,7 @@ func (o *StoreCreationRequest) GetAddress() Address2 {
 // GetAddressOk returns a tuple with the Address field value
 // and a boolean to check if the value has been set.
 func (o *StoreCreationRequest) GetAddressOk() (*Address2, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.Address, true
@@ -123,7 +123,7 @@ func (o *StoreCreationRequest) GetDescription() string {
 // GetDescriptionOk returns a tuple with the Description field value
 // and a boolean to check if the value has been set.
 func (o *StoreCreationRequest) GetDescriptionOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.Description, true
@@ -179,7 +179,7 @@ func (o *StoreCreationRequest) GetPhoneNumber() string {
 // GetPhoneNumberOk returns a tuple with the PhoneNumber field value
 // and a boolean to check if the value has been set.
 func (o *StoreCreationRequest) GetPhoneNumberOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.PhoneNumber, true
@@ -235,7 +235,7 @@ func (o *StoreCreationRequest) GetShopperStatement() string {
 // GetShopperStatementOk returns a tuple with the ShopperStatement field value
 // and a boolean to check if the value has been set.
 func (o *StoreCreationRequest) GetShopperStatementOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.ShopperStatement, true

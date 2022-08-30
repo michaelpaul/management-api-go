@@ -52,7 +52,7 @@ func (o *GiroPayInfo) GetSupportEmail() string {
 // GetSupportEmailOk returns a tuple with the SupportEmail field value
 // and a boolean to check if the value has been set.
 func (o *GiroPayInfo) GetSupportEmailOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.SupportEmail, true

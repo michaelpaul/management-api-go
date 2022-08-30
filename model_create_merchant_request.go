@@ -94,7 +94,7 @@ func (o *CreateMerchantRequest) GetCompanyId() string {
 // GetCompanyIdOk returns a tuple with the CompanyId field value
 // and a boolean to check if the value has been set.
 func (o *CreateMerchantRequest) GetCompanyIdOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.CompanyId, true

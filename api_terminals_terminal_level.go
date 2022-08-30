@@ -19,10 +19,6 @@ import (
 	"net/url"
 )
 
-// Linger please
-var (
-	_ context.Context
-)
 
 // TerminalsTerminalLevelApiService TerminalsTerminalLevelApi service
 type TerminalsTerminalLevelApiService service
@@ -44,31 +40,37 @@ func (r ApiGetTerminalsRequest) SearchQuery(searchQuery string) ApiGetTerminalsR
 	r.searchQuery = &searchQuery
 	return r
 }
+
 // Returns terminals located in the countries specified by their [two-letter country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).
 func (r ApiGetTerminalsRequest) Countries(countries string) ApiGetTerminalsRequest {
 	r.countries = &countries
 	return r
 }
+
 // Returns terminals that belong to the merchant accounts specified by their unique merchant account ID.
 func (r ApiGetTerminalsRequest) MerchantIds(merchantIds string) ApiGetTerminalsRequest {
 	r.merchantIds = &merchantIds
 	return r
 }
+
 // Returns terminals that are assigned to the [stores](https://docs.adyen.com/api-explorer/#/ManagementService/latest/get/stores) specified by their unique store ID.
 func (r ApiGetTerminalsRequest) StoreIds(storeIds string) ApiGetTerminalsRequest {
 	r.storeIds = &storeIds
 	return r
 }
+
 // Returns terminals of the [models](https://docs.adyen.com/api-explorer/#/ManagementService/latest/get/companies/{companyId}/terminalModels) specified in the format *brand.model*.
 func (r ApiGetTerminalsRequest) BrandModels(brandModels string) ApiGetTerminalsRequest {
 	r.brandModels = &brandModels
 	return r
 }
+
 // The number of the page to fetch.
 func (r ApiGetTerminalsRequest) PageNumber(pageNumber int32) ApiGetTerminalsRequest {
 	r.pageNumber = &pageNumber
 	return r
 }
+
 // The number of items to have on a page, maximum 100. The default is 20 items on a page.
 func (r ApiGetTerminalsRequest) PageSize(pageSize int32) ApiGetTerminalsRequest {
 	r.pageSize = &pageSize

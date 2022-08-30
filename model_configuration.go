@@ -57,7 +57,7 @@ func (o *Configuration) GetBrand() string {
 // GetBrandOk returns a tuple with the Brand field value
 // and a boolean to check if the value has been set.
 func (o *Configuration) GetBrandOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.Brand, true
@@ -81,7 +81,7 @@ func (o *Configuration) GetCurrencies() []Currency {
 // GetCurrenciesOk returns a tuple with the Currencies field value
 // and a boolean to check if the value has been set.
 func (o *Configuration) GetCurrenciesOk() ([]Currency, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return o.Currencies, true

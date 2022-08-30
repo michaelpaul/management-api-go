@@ -52,7 +52,7 @@ func (o *ApplePayInfo) GetDomains() []string {
 // GetDomainsOk returns a tuple with the Domains field value
 // and a boolean to check if the value has been set.
 func (o *ApplePayInfo) GetDomainsOk() ([]string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return o.Domains, true

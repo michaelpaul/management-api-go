@@ -52,7 +52,7 @@ func (o *GenerateHmacKeyResponse) GetHmacKey() string {
 // GetHmacKeyOk returns a tuple with the HmacKey field value
 // and a boolean to check if the value has been set.
 func (o *GenerateHmacKeyResponse) GetHmacKeyOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.HmacKey, true

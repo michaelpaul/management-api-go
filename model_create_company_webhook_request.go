@@ -182,7 +182,7 @@ func (o *CreateCompanyWebhookRequest) GetActive() bool {
 // GetActiveOk returns a tuple with the Active field value
 // and a boolean to check if the value has been set.
 func (o *CreateCompanyWebhookRequest) GetActiveOk() (*bool, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.Active, true
@@ -238,7 +238,7 @@ func (o *CreateCompanyWebhookRequest) GetCommunicationFormat() string {
 // GetCommunicationFormatOk returns a tuple with the CommunicationFormat field value
 // and a boolean to check if the value has been set.
 func (o *CreateCompanyWebhookRequest) GetCommunicationFormatOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.CommunicationFormat, true
@@ -294,7 +294,7 @@ func (o *CreateCompanyWebhookRequest) GetFilterMerchantAccountType() string {
 // GetFilterMerchantAccountTypeOk returns a tuple with the FilterMerchantAccountType field value
 // and a boolean to check if the value has been set.
 func (o *CreateCompanyWebhookRequest) GetFilterMerchantAccountTypeOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.FilterMerchantAccountType, true
@@ -318,7 +318,7 @@ func (o *CreateCompanyWebhookRequest) GetFilterMerchantAccounts() []string {
 // GetFilterMerchantAccountsOk returns a tuple with the FilterMerchantAccounts field value
 // and a boolean to check if the value has been set.
 func (o *CreateCompanyWebhookRequest) GetFilterMerchantAccountsOk() ([]string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return o.FilterMerchantAccounts, true
@@ -470,7 +470,7 @@ func (o *CreateCompanyWebhookRequest) GetType() string {
 // GetTypeOk returns a tuple with the Type field value
 // and a boolean to check if the value has been set.
 func (o *CreateCompanyWebhookRequest) GetTypeOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.Type, true
@@ -494,7 +494,7 @@ func (o *CreateCompanyWebhookRequest) GetUrl() string {
 // GetUrlOk returns a tuple with the Url field value
 // and a boolean to check if the value has been set.
 func (o *CreateCompanyWebhookRequest) GetUrlOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.Url, true

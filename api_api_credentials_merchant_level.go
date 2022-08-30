@@ -20,10 +20,6 @@ import (
 	"strings"
 )
 
-// Linger please
-var (
-	_ context.Context
-)
 
 // APICredentialsMerchantLevelApiService APICredentialsMerchantLevelApi service
 type APICredentialsMerchantLevelApiService service
@@ -41,6 +37,7 @@ func (r ApiGetMerchantsMerchantIdApiCredentialsRequest) PageNumber(pageNumber in
 	r.pageNumber = &pageNumber
 	return r
 }
+
 // The number of items to have on a page, maximum 100. The default is 10 items on a page.
 func (r ApiGetMerchantsMerchantIdApiCredentialsRequest) PageSize(pageSize int32) ApiGetMerchantsMerchantIdApiCredentialsRequest {
 	r.pageSize = &pageSize
@@ -222,7 +219,6 @@ type ApiGetMerchantsMerchantIdApiCredentialsApiCredentialIdRequest struct {
 	merchantId string
 	apiCredentialId string
 }
-
 
 func (r ApiGetMerchantsMerchantIdApiCredentialsApiCredentialIdRequest) Execute() (*ApiCredential, *http.Response, error) {
 	return r.ApiService.GetMerchantsMerchantIdApiCredentialsApiCredentialIdExecute(r)

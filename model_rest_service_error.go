@@ -71,7 +71,7 @@ func (o *RestServiceError) GetDetail() string {
 // GetDetailOk returns a tuple with the Detail field value
 // and a boolean to check if the value has been set.
 func (o *RestServiceError) GetDetailOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.Detail, true
@@ -95,7 +95,7 @@ func (o *RestServiceError) GetErrorCode() string {
 // GetErrorCodeOk returns a tuple with the ErrorCode field value
 // and a boolean to check if the value has been set.
 func (o *RestServiceError) GetErrorCodeOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.ErrorCode, true
@@ -247,7 +247,7 @@ func (o *RestServiceError) GetStatus() int32 {
 // GetStatusOk returns a tuple with the Status field value
 // and a boolean to check if the value has been set.
 func (o *RestServiceError) GetStatusOk() (*int32, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.Status, true
@@ -271,7 +271,7 @@ func (o *RestServiceError) GetTitle() string {
 // GetTitleOk returns a tuple with the Title field value
 // and a boolean to check if the value has been set.
 func (o *RestServiceError) GetTitleOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.Title, true
@@ -295,7 +295,7 @@ func (o *RestServiceError) GetType() string {
 // GetTypeOk returns a tuple with the Type field value
 // and a boolean to check if the value has been set.
 func (o *RestServiceError) GetTypeOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.Type, true

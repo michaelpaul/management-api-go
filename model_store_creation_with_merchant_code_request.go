@@ -70,7 +70,7 @@ func (o *StoreCreationWithMerchantCodeRequest) GetAddress() Address2 {
 // GetAddressOk returns a tuple with the Address field value
 // and a boolean to check if the value has been set.
 func (o *StoreCreationWithMerchantCodeRequest) GetAddressOk() (*Address2, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.Address, true
@@ -126,7 +126,7 @@ func (o *StoreCreationWithMerchantCodeRequest) GetDescription() string {
 // GetDescriptionOk returns a tuple with the Description field value
 // and a boolean to check if the value has been set.
 func (o *StoreCreationWithMerchantCodeRequest) GetDescriptionOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.Description, true
@@ -182,7 +182,7 @@ func (o *StoreCreationWithMerchantCodeRequest) GetMerchantId() string {
 // GetMerchantIdOk returns a tuple with the MerchantId field value
 // and a boolean to check if the value has been set.
 func (o *StoreCreationWithMerchantCodeRequest) GetMerchantIdOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.MerchantId, true
@@ -206,7 +206,7 @@ func (o *StoreCreationWithMerchantCodeRequest) GetPhoneNumber() string {
 // GetPhoneNumberOk returns a tuple with the PhoneNumber field value
 // and a boolean to check if the value has been set.
 func (o *StoreCreationWithMerchantCodeRequest) GetPhoneNumberOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.PhoneNumber, true
@@ -262,7 +262,7 @@ func (o *StoreCreationWithMerchantCodeRequest) GetShopperStatement() string {
 // GetShopperStatementOk returns a tuple with the ShopperStatement field value
 // and a boolean to check if the value has been set.
 func (o *StoreCreationWithMerchantCodeRequest) GetShopperStatementOk() (*string, bool) {
-	if o == nil  {
+	if o == nil {
 		return nil, false
 	}
 	return &o.ShopperStatement, true
